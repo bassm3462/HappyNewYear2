@@ -11,7 +11,6 @@
   -webkit-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
 }
-
 .feliz {
   width: 100%;
   font-family: 'Pacifico', cursive;
@@ -363,21 +362,10 @@ a.author {
     opacity: 1;
   }
 }
-
-
-
-.mainsection {
-  height: 100vh;
-  /* display: none; */
-  /* background-color: #f48fb1;
-     */
-}
-
-
 body {
   height: 100vh;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  max-width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -571,6 +559,12 @@ body {
     font-size: 20px;
     width: 400px;
   max-width: 100%;
+  }
+  body {
+    height: 100vh;
+    width: 100% !important;
+    /* min-width:100%; */
+    overflow: hidden;
   }
 
 }

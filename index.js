@@ -3,7 +3,7 @@ function delaytext() {
   setTimeout(() => {
       document.getElementsByClassName("displaytextArpc")[0].style.display = "none";
       document.getElementsByClassName("displayTextEnglis")[0].style.display = "block";
-  }, 11000);
+  }, 10000);
 }
 delaytext()
 const snowFall = () => {
@@ -43,7 +43,7 @@ const snowFall = () => {
   
 function delay(){
   setTimeout(()=>{
-    // window.location.href = "https://urproducts.iq/index";
+    window.location.href = "https://urproducts.iq/index";
   },20000);
 }
 delay();
