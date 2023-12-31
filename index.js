@@ -3,7 +3,7 @@ function delaytext() {
   setTimeout(() => {
       document.getElementsByClassName("displaytextArpc")[0].style.display = "none";
       document.getElementsByClassName("displayTextEnglis")[0].style.display = "block";
-  }, 3000);
+  }, 11000);
 }
 delaytext()
 const snowFall = () => {
