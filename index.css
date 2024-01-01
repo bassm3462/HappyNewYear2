@@ -2,7 +2,223 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
 
-*,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80")no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+.new-year-body {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  overflow: hidden;
+}
+
+.snow {
+  position: absolute;
+  /* top: -10%; */
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 0px #fff, 0 0 50px #fff;
+}
+
+.snowAnimation1 {
+  animation: snowFall1 linear infinite;
+}
+
+.snowAnimation2 {
+  animation: snowFall2 linear infinite;
+}
+
+.snowAnimation3 {
+  animation: snowFall3 linear infinite;
+}
+
+.snowAnimation4 {
+  animation: snowFall4 linear infinite;
+}
+
+@keyframes snowFall1 {
+  0% {
+    transform: translate(0vw, 0vh);
+  }
+
+  100% {
+    transform: translate(50vw, 150vh);
+  }
+}
+
+@keyframes snowFall2 {
+  0% {
+    transform: translate(-10vw, -10vh);
+  }
+
+  100% {
+    transform: translate(60vw, 150vh);
+  }
+}
+
+@keyframes snowFall3 {
+  0% {
+    transform: translate(10vw, 0vh);
+  }
+
+  100% {
+    transform: translate(40vw, 150vh);
+  }
+}
+
+@keyframes snowFall4 {
+  0% {
+    transform: translate(0vw, 0vh);
+  }
+
+  100% {
+    transform: translate(40vw, 150vh);
+  }
+}
+
+@keyframes yourAnimationName {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* PostionTextEffict .CenterDIVEText {
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  animation: effectText 6s linear
+
+ 
+} */
+.mainbody .displayContaint .displayyy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.CenterDIVEText {
+  position: absolute;
+  bottom: 10px;
+  margin-bottom: 40px;
+
+}
+.CenterDIVEText p {
+  font-size: 28px;
+  color: white;
+  width: 500px;
+}
+.displayTextEnglis {
+  display: none;
+}
+.displaytextArpc p {
+  direction: rtl;
+  text-align: center;
+
+  /* display: none !important; */
+}
+
+.displaytextArpc p {
+  animation: yourAnimationName 2s ease-in-out;
+}
+
+@keyframes yourAnimationName {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.displayTextEnglis p {
+  text-align: center;
+  animation: yourAnimationName 2s ease-in-out;
+}
+
+.containerImage {
+  /* position: relative; */
+  margin: 20px;
+  width: 100%;
+}
+
+.containerImage .imageLoggo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* position: absolute; */
+  /* left: 0; */
+}
+
+.containerImage .imageLoggo img {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+.containerImage .imageLoggo .leftImage {
+  position: absolute;
+  left: 0px;
+  right: 0;
+  animation: leftImge 4s infinite;
+}
+
+.containerImage .imageLoggo .ReighImage {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  animation: ReighImge 4s infinite;
+}
+
+@keyframes leftImge {
+  0% {
+    transform: rotate3d(180, 0, 0, 180) ;
+    left: -1500px;
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 0, 0) ;
+    left: 0px;
+  }
+}
+
+@keyframes ReighImge {
+  0% {
+    /* transform: rotate3d(180) ;  */
+    right: -1500px;
+
+  }
+
+  100% {
+    /* transform: translateX(-50%) scale(1);  */
+    right: 0px;
+  }
+}
+
 *:after,
 *:before {
   box-sizing: border-box;
@@ -26,7 +242,7 @@
 
 .ano_novo {
   position: absolute;
-  top: -300px;
+  top: -350px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -362,209 +578,44 @@ a.author {
     opacity: 1;
   }
 }
-body {
-  height: 100vh;
-  width: 100%;
-  max-width:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80")no-repeat center center;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.snow {
-  position: absolute;
-  top: -10%;
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 0 0px #fff, 0 0 50px #fff;
-}
-
-.snowAnimation1 {
-  animation: snowFall1 linear infinite;
-}
-
-.snowAnimation2 {
-  animation: snowFall2 linear infinite;
-}
-
-.snowAnimation3 {
-  animation: snowFall3 linear infinite;
-}
-
-.snowAnimation4 {
-  animation: snowFall4 linear infinite;
-}
-
-@keyframes snowFall1 {
-  0% {
-    transform: translate(0vw, 0vh);
-  }
-
-  100% {
-    transform: translate(50vw, 150vh);
-  }
-}
-
-@keyframes snowFall2 {
-  0% {
-    transform: translate(-10vw, -10vh);
-  }
-
-  100% {
-    transform: translate(60vw, 150vh);
-  }
-}
-
-@keyframes snowFall3 {
-  0% {
-    transform: translate(10vw, 0vh);
-  }
-
-  100% {
-    transform: translate(40vw, 150vh);
-  }
-}
-
-@keyframes snowFall4 {
-  0% {
-    transform: translate(0vw, 0vh);
-  }
-
-  100% {
-    transform: translate(40vw, 150vh);
-  }
-}
 
 
-.PostionTextEffict {
-  position: relative;
-  width: 100%;
-  top: 50px;
-}
-
-.PostionTextEffict .PostionAbsluotText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-
-}
-
-.imageLoggo img {
-  height: 250px;
-  width: 250px;
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-  margin-bottom: 40px;
-}
-
-.CenterDIVEText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.typewrite {
-  color: white;
-}
-
-.H1 span {
-  display: inline-block;
-  width: 400px
-}
-
-.PostionTextEffict .CenterDIVEText {
-  position: absolute;
-  /* top: 100px; */
-  bottom: -70px;
-  width: 100%;
-  animation: effectText 6s linear
-
- 
-}
-
-.CenterDIVEText p{
-  font-size: 28px;
-  color: white;
-  width: 500px;
-
-}
-
-.displayTextEnglis {
-  display: none;
-
-}
-.displaytextArpc p{
-  direction: rtl;
-  text-align: center;
-  
-  /* display: none !important; */
-}
-.displaytextArpc p {
-  animation: yourAnimationName 2s ease-in-out;
-}
-
-@keyframes yourAnimationName {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.displayTextEnglis p {
-  text-align: center;
-  animation: yourAnimationName 2s ease-in-out;
-}
-
-@keyframes yourAnimationName {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @media (max-width: 768px) {
   .ano_novo>span {
     font-size: 100px;
   }
-  span.seis{
+
+  span.seis {
     margin-right: -100px;
-  top:auto;
+    top: auto;
   }
-  span.sete{
-  margin-right: -100px;
+
+  span.sete {
+    margin-right: -100px;
 
   }
-  .imageLoggo img{
-    height: 190px;
-    width: 190px;
+
+  .imageLoggo img {
+    height: 190px !important;
+    width: 190px !important;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
     margin-bottom: 100px;
   }
-  .CenterDIVEText p{
+
+  .CenterDIVEText p {
     font-size: 20px;
-    width: 400px;
-  max-width: 100%;
+    width: 300px;
+    max-width: 100%;
   }
-  body {
-    height: 100vh;
-    width: 100% !important;
-    /* min-width:100%; */
-    overflow: hidden;
+
+  .bg {
+    display: none;
+  }
+  .CenterDIVEText{
+    bottom: 30px;
+    margin: 20px;
   }
 
 }
