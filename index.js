@@ -43,7 +43,8 @@ const snowFall = () => {
   
 function delay(){
   setTimeout(()=>{
-    // window.location.href = "https://urproducts.iq/index";
+    
+  window.location.href = "https://urproducts.iq/index";
   },20000);
 }
 delay();
