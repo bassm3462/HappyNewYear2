@@ -52,10 +52,25 @@
         </div>
       </main>
     </section>
-    <audio  autoplay loop>
-      <source src="horse.ogg" type="audio/ogg">
-      <source src="image/audio.mp3" type="audio/mp3">
-    </audio>
+  </section>
+</section>
+<audio id="autoplay" autoplay loop>
+  <!-- <source src="horse.ogg" type="audio/ogg"> -->
+  <source src="image/الموقع.mp4" type="audio/mp3">
+</audio>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var audio = document.getElementById("autoplay");
+
+    // Play the audio when the page is loaded
+    audio.play().catch(function(error) {
+      // Autoplay was prevented, handle the error
+      console.log("Autoplay was prevented:", error);
+    });
+  });
+</script>
+
+  
     <script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

@@ -184,7 +184,7 @@ top: 200px;
   top: 50%;
   transform: translateY(-50%);
 
-  animation: leftImge 4s infinite;
+  animation: leftImge 4s ease-in-out;
 }
 
 .containerImage .imageLoggo .ReighImage {
@@ -194,7 +194,7 @@ top: 200px;
   top: 50%;
   transform: translateY(-50%);
 
-  animation: ReighImge 4s infinite;
+  animation: ReighImge 4s ease-in-out;
 }
 
 @keyframes leftImge {
